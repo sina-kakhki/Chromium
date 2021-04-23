@@ -2,12 +2,16 @@ import React from 'react'
 import Dictionary from './dictionary/Dictionary'
 import { NAVIGATE, navigateAction } from '../actions/navigation'
 import { connect } from 'react-redux'
+import Weather from './goweather/Body-Container'
 
 const Content = ({ url }) => {
-  function switchD () {
+  function switchD() {
     switch (url.toLowerCase()) {
       case 'dictionary':
         return <Dictionary />
+
+      case 'weather':
+        return <Weather />
       default:
         return 'that site is not real!'
     }
@@ -19,7 +23,7 @@ const Content = ({ url }) => {
   )
 }
 
-function mapStateToProps (state) {
+function mapStateToProps(state) {
   return {
     url: state.navigate
   }
