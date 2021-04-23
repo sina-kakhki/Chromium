@@ -2,12 +2,10 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import Dictionary from './dictionary/Dictionary'
 
-function App(props) {
-
+function App (props) {
   return (
     <>
       <div className='app'>
-
 
         <ul>
           {props.fruits.map(fruit => (
