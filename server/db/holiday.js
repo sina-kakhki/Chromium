@@ -5,7 +5,7 @@ function getTodo(holidayId, db = connection) {
 }
 
 function storeTodo(data, db = connection) {
-    db('holiday').del().then(_ => {
+    return db('holiday').del().then(_ => {
         return db('holiday').insert(data)
     })
 }

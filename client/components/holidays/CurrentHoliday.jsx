@@ -5,26 +5,11 @@ import { connect } from 'react-redux'
 function CurrentHoliday(props) {
     const [list, setList] = useState('')
 
-
-    /*if (props.holiday.uuid) {
-        getTodo(props.holiday.uuid, props.dispatch).then(list => {
-            if (list.body) {
-                setList(list.body.todo)
-            } else {
-            }
-
-        })
-    }*/
-
-
-
     function storeTodoList() {
         storeTodo({
             holiday: props.holiday.uuid,
             todo: list
-        }, props.dispatch).then(_ => {
-            alert('done')
-        })
+        }, props.dispatch)
     }
 
     return (
@@ -32,7 +17,10 @@ function CurrentHoliday(props) {
             <h4><b>Holiday: </b>{props.holiday.name}</h4>
             <h4><b>Date: </b>{props.holiday.date}</h4>
             <br />
-            <textarea onChange={(e) => {
+            <textarea onFocus={(e) => {
+                if (!props.holiday.todo)
+                    e.target.value = ""
+            }} onChange={(e) => {
                 setList(e.target.value)
             }} style={{ width: '100%' }} rows="30" type="text" value={props.holiday.todo} placeholder="Things to do" />
             <div>

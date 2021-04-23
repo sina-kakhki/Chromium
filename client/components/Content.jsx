@@ -4,6 +4,7 @@ import Holiday from './holidays/Holiday'
 import { NAVIGATE, navigateAction } from '../actions/navigation'
 import { connect } from 'react-redux'
 import Weather from './goweather/Body-Container'
+import Jokes from './memeGenerator/Joke'
 
 const Content = ({ url }) => {
   function switchD() {
@@ -12,7 +13,8 @@ const Content = ({ url }) => {
         return <Dictionary />
       case 'planmyholiday':
         return <Holiday />
-
+      case 'jokes':
+        return <Jokes />
       case 'weather':
         return <Weather />
       default:
