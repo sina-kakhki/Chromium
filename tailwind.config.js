@@ -4,7 +4,11 @@ module.exports = {
   theme: {
   },
   variants: {
-    extend: {}
+    extend: {
+      backgroundImage: theme => ({
+        hero: "url('server/public/images/wallpaper.jpeg')"
+      })
+    }
   },
   plugins: []
 }
