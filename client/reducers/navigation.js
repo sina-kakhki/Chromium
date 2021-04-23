@@ -1,7 +1,7 @@
 import { NAVIGATE } from '../actions/navigation'
 
 
-const navigateReducer = (state = 'home', action) => {
+const navigateReducer = (state = '', action) => {
 
   switch (action.type) {
     case NAVIGATE:
