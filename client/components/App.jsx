@@ -7,7 +7,13 @@ function App(props) {
   return (
     <>
       <div className='app'>
-        <Dictionary />
+
+
+        <ul>
+          {props.fruits.map(fruit => (
+            <li key={fruit}>{fruit}</li>
+          ))}
+        </ul>
       </div>
     </>
   )
