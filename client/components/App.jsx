@@ -1,26 +1,17 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+import BodyContainer from './goweather/Body-Container'
 
-import { fetchFruits } from '../actions'
-
-function App (props) {
-  useEffect(() => {
-    props.dispatch(fetchFruits())
-  }, [])
-
+function App () {
   return (
     <>
       <div className='app'>
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>
-          {props.fruits.map(fruit => (
-            <li key={fruit}>{fruit}</li>
-          ))}
-        </ul>
+       <BodyContainer />
       </div>
     </>
   )
 }
+
 const mapStateToProps = (globalState) => {
   return {
     fruits: globalState.fruits
