@@ -19,6 +19,19 @@ Use a better box model (opinionated).
   box-sizing: border-box;
 }
 
+.cityName {
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.cityNameButton {
+	display: block;
+}
+
+.form-group {
+	margin-top: 1rem;
+}
+
 /**
 Use a more readable tab size (opinionated).
 */
