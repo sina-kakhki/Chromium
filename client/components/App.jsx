@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import Dictionary from './Dictionary'
+import Dictionary from './dictionary/Dictionary'
 
 function App(props) {
 

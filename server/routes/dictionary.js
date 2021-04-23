@@ -15,7 +15,7 @@ Router.get('/:word', (req, res) => {
       res.status(200).json(result.body)
     })
     .catch(err => {
-      res.status(404).send(err.response.text)
+      res.status(404).send(`No entry found for ${word}`)
     })
 
 })
