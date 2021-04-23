@@ -2,6 +2,7 @@ import React from 'react'
 import Dictionary from './dictionary/Dictionary'
 import { NAVIGATE, navigateAction } from '../actions/navigation'
 import { connect } from 'react-redux'
+import Jokes from './memeGenerator/Joke'
 
 const Content = ({ url }) => {
   function switchD () {
