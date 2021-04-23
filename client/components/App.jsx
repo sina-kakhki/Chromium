@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+import Dictionary from './dictionary/Dictionary'
 
-import { fetchFruits } from '../actions'
-
-function App (props) {
-  useEffect(() => {
-    props.dispatch(fetchFruits())
-  }, [])
+function App(props) {
 
   return (
     <>
       <div className='app'>
+
 
         <ul>
           {props.fruits.map(fruit => (
