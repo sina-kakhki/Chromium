@@ -3,6 +3,7 @@ import React from 'react'
 import Search from './Search'
 import Tools from './Tools'
 import Content from './Content'
+import Dictionary from './dictionary/Dictionary'
 
 const Browser = () => {
   return (

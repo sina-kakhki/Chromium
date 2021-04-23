@@ -3,10 +3,16 @@ import { connect } from 'react-redux'
 import BodyContainer from './goweather/Body-Container'
 import Dictionary from './dictionary/Dictionary'
 
-function App () {
+function App (props) {
   return (
     <>
       <div className='app'>
+
+        <ul>
+          {props.fruits.map(fruit => (
+            <li key={fruit}>{fruit}</li>
+          ))}
+        </ul>
       </div>
     </>
   )
