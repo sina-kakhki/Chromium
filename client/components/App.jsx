@@ -1,19 +1,13 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import Dictionary from './dictionary/Dictionary'
-
+import Browser from './Browser'
 function App(props) {
 
   return (
     <>
       <div className='app'>
 
-
-        <ul>
-          {props.fruits.map(fruit => (
-            <li key={fruit}>{fruit}</li>
-          ))}
-        </ul>
       </div>
     </>
   )
