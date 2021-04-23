@@ -7,7 +7,7 @@ import Content from './Content'
 const Browser = () => {
   return (
     <>
-      <div className="flex flex-col p-4 m-16 rounded-lg md:w-auto md:h-auto bg-gray-100 shadow-2xl cursor-pointer">
+      <div className="flex flex-col p-4 m-16 rounded-lg md:w-auto md:h-auto bg-gray-100 shadow-2xl cursor-pointer ">
 
         <div className="flex flex-wrap flex-row p-1 mb-4 items stretch">
 
