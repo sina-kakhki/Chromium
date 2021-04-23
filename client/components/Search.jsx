@@ -1,9 +1,17 @@
 import React from 'react'
+import { navigateAction } from '../actions/navigation'
+import { connect } from 'react-redux'
 
-const Search = () => {
+const Search = ({ dispatch }) => {
+
+  function handleSubmit(evt) {
+    evt.preventDefault()
+    const url = evt.target.urlField.value.split('.')[0]
+    dispatch(navigateAction(url))
+  }
   return (
     <>
-      <form className="font-mono space-x-4">
+      <form className="font-mono space-x-4" onSubmit={handleSubmit}>
         <label >
           <input className="w-96 border border-gray-400" type="text" name="urlField" placeholder="Search Google or enter a URL" />
         </label>
@@ -13,4 +21,4 @@ const Search = () => {
   )
 }
 
-export default Search
+export default connect()(Search)

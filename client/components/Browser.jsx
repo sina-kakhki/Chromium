@@ -8,9 +8,9 @@ import Dictionary from './dictionary/Dictionary'
 const Browser = () => {
   return (
     <>
-      <div className="flex flex-col p-4 m-16 rounded-lg md:w-auto md:h-auto bg-gray-100 shadow-2xl cursor-pointer ">
+      <div className="flex flex-col p-4 m-16 rounded-lg md:w-auto md:h-auto bg-gray-100">
 
-        <div className="flex flex-wrap flex-row p-1 mb-4 items stretch">
+        <div className="flex flex-wrap flex-row p-1 items stretch">
 
           <div className="flex flex-column w-1/5">
             <Tools />
@@ -22,7 +22,7 @@ const Browser = () => {
         </div>
 
         <div>
-          <Dictionary />
+          <Content />
         </div>
 
       </div>

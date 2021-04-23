@@ -1,28 +1,29 @@
 import React from 'react'
+import Dictionary from './dictionary/Dictionary'
+import { NAVIGATE, navigateAction } from '../actions/navigation'
+import { connect } from 'react-redux'
 
-const Content = () => {
+const Content = ({ url }) => {
+
+  function switchD() {
+    switch (url.toLowerCase()) {
+      case 'dictionary':
+        return <Dictionary />
+      default:
+        return "that site is not real!"
+    }
+  }
   return (
     <>
-      <div className="md:container md:mx-auto bg-gray-400 justify-items-center shadow-lg">
-        <h3>API website</h3>
-        <p>This is some website content</p>
-        <p>More more more</p>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br><br></br>
-      </div>
+      {switchD()}
     </>
   )
 }
 
-export default Content
+
+function mapStateToProps(state) {
+  return {
+    url: state.navigate
+  }
+}
+export default connect(mapStateToProps)(Content)
