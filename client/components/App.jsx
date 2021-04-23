@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+import BodyContainer from './goweather/Body-Container'
 import Dictionary from './dictionary/Dictionary'
 
-function App(props) {
+function App (props) {
   return (
     <>
       <div className='app'>
@@ -16,6 +17,7 @@ function App(props) {
     </>
   )
 }
+
 const mapStateToProps = (globalState) => {
   return {
     fruits: globalState.fruits
