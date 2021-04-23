@@ -1,5 +1,6 @@
 import React from 'react'
 import Dictionary from './dictionary/Dictionary'
+import Holiday from './holidays/Holiday'
 import { NAVIGATE, navigateAction } from '../actions/navigation'
 import { connect } from 'react-redux'
 import Weather from './goweather/Body-Container'
@@ -9,6 +10,8 @@ const Content = ({ url }) => {
     switch (url.toLowerCase()) {
       case 'dictionary':
         return <Dictionary />
+      case 'planmyholiday':
+        return <Holiday />
 
       case 'weather':
         return <Weather />
