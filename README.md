@@ -26,22 +26,22 @@ Programming Jokes API Page|Dictionary API Page
 
 Weather API Page|Holiday Planner API Page
 ------------------------------------|-------------------------------
-![WeatherAPIPage](docs/weatherAPI.PNG)|![HolidayPlannerAPIPage](docs/holidayPlannerAPI.PNG)
+![WeatherAPIPage](docs/weatherAPI.PNG)|![HolidayPlannerAPIPage](docs/holidayPlanner.PNG)
 
 ## Details
 
 ## Tech Stack
 **Client:** React, Redux, TailwindCSS
 
-**Server:** Node, Express, Knex
+**Server:** NodeJS, ExpressJS, KnexJS
 
 ## Authors
-- Yuan  - [@sarah-smith-nz](https://github.com/sarah-smith-nz)
+- Yuan - [@seegg](https://github.com/seegg) - Dictionary API.
 
-- Sina Kakhki - [@sina-kakhki](https://github.com/sina-kakhki) - Programming Jokes API
+- Sina Kakhki - [@sina-kakhki](https://github.com/sina-kakhki) - Programming Jokes API.
 
-- Dmitri - [@jonathan-zhou](https://github.com/jonathan-zhou)
+- Dmitriy Yegorov - [@Dyegor](https://github.com/Dyegor) - Weather API.
 
-- Kateti - [@johannbesas](https://github.com/johannbesas)
+- Kateti Mareko - [@ispeakcode01](https://github.com/ispeakcode01) - Holiday Planner API.
 
-- Johnny  - [@lory-costa](https://github.com/lory-costa)
+- Johnny Sainsbury - [@johnny-sainsbury](https://github.com/johnny-sainsbury) - Home page and all of the stylings.
