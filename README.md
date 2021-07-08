@@ -12,6 +12,11 @@ npm run knex seed:run # to get seed data
 npm run dev # to start the dev server
 ```
 
+- To view the Programming Jokes API type 'jokes' in the search box.
+- To view the Weather API type 'weather' in the search box.
+- To view the Dictionary API type 'dictionary' in the search box.
+- To view the Holiday Planner API type 'planmyholiday' in the search box.
+
 You can find the server running on [http://localhost:3000](http://localhost:3000).
 
 ## User interface
