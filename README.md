@@ -1,6 +1,6 @@
 # CHROMIUM
 
-As a team we decided to create a website that has the looks of Chromium browser and consumes 4 diffrent external APIs.
+One day group project. As a team we decided to create a website that has the looks of Chromium browser and consumes 4 diffrent external APIs.
 
 ### From the command line
 
