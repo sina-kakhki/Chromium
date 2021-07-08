@@ -14,11 +14,15 @@ npm run dev # to start the dev server
 
 You can find the server running on [http://localhost:3000](http://localhost:3000).
 
-
-- To view the Programming Jokes API type **jokes** in the search box.
-- To view the Weather API type **weather** in the search box.
-- To view the Dictionary API type **dictionary** in the search box.
-- To view the Holiday Planner API type **planmyholiday** in the search box.
+## User Stories
+1. As a user I want to be able to read a programming joke. 
+    - To view the Programming Jokes API type **jokes** in the search box.
+2. As a user I want to be able to see the waether forcast by city.
+    - To view the Weather API type **weather** in the search box.
+3. As a user I want to be able to seach for the definition of English words with pronounciation.
+    - To view the Dictionary API type **dictionary** in the search box.
+4. As a user I want to be able to use a holiday planner to plan and make notes for my upcoming holidays.
+    - To view the Holiday Planner API type **planmyholiday** in the search box.
 
 
 
